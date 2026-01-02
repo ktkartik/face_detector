@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Face Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI FACE DETECTION SYSTEM</h1>
+    <p class="subtitle">Real-Time Vision • Neural Processing • Live Feed</p>
+
+    <div class="camera-frame">
+        <img src="{{ url_for('video') }}">
+    </div>
+
+    <div class="status-panel">
+        <div class="status active">● CAMERA ONLINE</div>
+        <div class="status">AI MODEL: HAAR CASCADE</div>
+        <div class="status">MODE: REAL-TIME STREAMING</div>
+    </div>
+
+    <footer>
+        Designed by Kartik • Futuristic Vision System
+    </footer>
+</div>
+
+</body>
+</html>
